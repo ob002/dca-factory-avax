@@ -43,7 +43,7 @@ ExecutionEngine ◄────────────────┘
 
 ## Deployments
 
-### ✅ Fuji Testnet (Chain ID: 43113) — LIVE
+### Fuji Testnet (Chain ID: 43113) — LIVE
 
 | Contract | Address |
 |----------|---------|
@@ -53,7 +53,7 @@ ExecutionEngine ◄────────────────┘
 
 > View on [Fuji Snowtrace](https://testnet.snowtrace.io/address/0x1d50d7D9E5bD67E5A5af9dcEd572399478EDac8c)
 
-### 🔜 Mainnet (Chain ID: 43114) — Coming Soon
+### Mainnet (Chain ID: 43114) — Coming Soon
 
 | Contract | Address |
 |----------|---------|
