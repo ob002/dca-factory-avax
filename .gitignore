@@ -1,2 +1,34 @@
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Hardhat generated files
+cache/
+artifacts/
+typechain-types/
+coverage/
+
+# Ignition deployments — keep locally only
+ignition/deployments/
+packages/contracts/ignition/deployments/
+
+# Environment files — NEVER commit
+.env
+.env.local
+.env.*.local
 packages/contracts/.env
-packages/contracts/.env.*
+packages/frontend/.env.local
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# TypeScript build
+*.tsbuildinfo
+dist/
