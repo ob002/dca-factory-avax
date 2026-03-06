@@ -1,9 +1,7 @@
 "use client";
-import { useState, useEffect } from "react";
-import { useVault } from "./useVault";
+import { useState } from "react";
 
 export function useExecutionHistory() {
-  const { vaultAddress } = useVault();
   const [history] = useState<any[]>([]);
   const [isLoading] = useState(false);
   return { history, isLoading };
