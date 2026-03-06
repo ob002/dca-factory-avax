@@ -1,0 +1,118 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "BurnTracker",
+  "sourceName": "contracts/BurnTracker.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "gasUsed",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "txCount",
+          "type": "uint256"
+        }
+      ],
+      "name": "GasTracked",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "getMyStats",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "totalGasUsed",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalTransactions",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "avaxBurned",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct BurnTracker.UserStats",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "gasUsed",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "txCount",
+          "type": "uint256"
+        }
+      ],
+      "name": "recordUsage",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "userStats",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "totalGasUsed",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "totalTransactions",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "avaxBurned",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x60808060405234601557610263908161001b8239f35b600080fdfe6080604052600436101561001257600080fd5b60003560e01c8063287bbb3d146101055780637a52723e1461009357638a65d8741461003d57600080fd5b3461008e57602036600319011261008e576001600160a01b0361005e6101d4565b16600052600060205260606040600020805490600260018201549101549060405192835260208301526040820152f35b600080fd5b3461008e57600036600319011261008e57600060406100b06101f7565b8281528260208201520152336000526000602052606060406000206100d36101f7565b815491828252604060026001830154926020850193845201549201918252604051928352516020830152516040820152f35b3461008e57606036600319011261008e5761011e6101d4565b602435906044359060018060a01b03168060005260006020526040600020916101488484546101ea565b8355600183016101598282546101ea565b90556405d21dba008402938085046405d21dba0014811517156101be577fc8d15027016f06bce945af08d67204532f647fe6ea775c5e663a923a85ab1336946101a96002606096019182546101ea565b905560405192835260208301526040820152a1005b634e487b7160e01b600052601160045260246000fd5b600435906001600160a01b038216820361008e57565b919082018092116101be57565b604051906060820182811067ffffffffffffffff82111761021757604052565b634e487b7160e01b600052604160045260246000fdfea26469706673582212202bedc11d2a5a4a871477c127ce97dcb732ffcec3738c3d31445136d5c802764c64736f6c634300081c0033",
+  "deployedBytecode": "0x6080604052600436101561001257600080fd5b60003560e01c8063287bbb3d146101055780637a52723e1461009357638a65d8741461003d57600080fd5b3461008e57602036600319011261008e576001600160a01b0361005e6101d4565b16600052600060205260606040600020805490600260018201549101549060405192835260208301526040820152f35b600080fd5b3461008e57600036600319011261008e57600060406100b06101f7565b8281528260208201520152336000526000602052606060406000206100d36101f7565b815491828252604060026001830154926020850193845201549201918252604051928352516020830152516040820152f35b3461008e57606036600319011261008e5761011e6101d4565b602435906044359060018060a01b03168060005260006020526040600020916101488484546101ea565b8355600183016101598282546101ea565b90556405d21dba008402938085046405d21dba0014811517156101be577fc8d15027016f06bce945af08d67204532f647fe6ea775c5e663a923a85ab1336946101a96002606096019182546101ea565b905560405192835260208301526040820152a1005b634e487b7160e01b600052601160045260246000fd5b600435906001600160a01b038216820361008e57565b919082018092116101be57565b604051906060820182811067ffffffffffffffff82111761021757604052565b634e487b7160e01b600052604160045260246000fdfea26469706673582212202bedc11d2a5a4a871477c127ce97dcb732ffcec3738c3d31445136d5c802764c64736f6c634300081c0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
