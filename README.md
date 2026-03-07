@@ -63,6 +63,8 @@ ExecutionEngine ◄────────────────┘
 
 > Mainnet deployment scheduled after Fuji testing is complete.
 
+> 🌐 Live App: https://69abdf3cd2e34edcdcf9f9a6--dashing-puffpuff-c5217b.netlify.app/
+
 ---
 
 ## Protocol Integrations
