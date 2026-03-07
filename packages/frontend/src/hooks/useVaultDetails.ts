@@ -7,7 +7,7 @@ import { parseUnits } from "viem";
 export function useVaultDetails(vaultAddress?: string) {
   const { data: statusData, refetch } = useReadContract({
     address: vaultAddress as `0x${string}`,
-    abi: DCAVaultABI.abi,
+    abi: DCAVaultABI,
     functionName: "getStatus",
     query: { enabled: !!vaultAddress },
   });
@@ -30,7 +30,7 @@ export function useVaultDetails(vaultAddress?: string) {
     if (!vaultAddress) return;
     writeContract({
       address: vaultAddress as `0x${string}`,
-      abi: DCAVaultABI.abi,
+      abi: DCAVaultABI,
       functionName: "pause",
     });
   };
@@ -39,7 +39,7 @@ export function useVaultDetails(vaultAddress?: string) {
     if (!vaultAddress) return;
     writeContract({
       address: vaultAddress as `0x${string}`,
-      abi: DCAVaultABI.abi,
+      abi: DCAVaultABI,
       functionName: "resume",
     });
   };
@@ -48,7 +48,7 @@ export function useVaultDetails(vaultAddress?: string) {
     if (!vaultAddress) return;
     writeContract({
       address: vaultAddress as `0x${string}`,
-      abi: DCAVaultABI.abi,
+      abi: DCAVaultABI,
       functionName: "updateSettings",
       args: [parseUnits(buyAmount, 6), BigInt(frequency)],
     });
