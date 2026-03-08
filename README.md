@@ -237,7 +237,7 @@ This protocol is built specifically for Avalanche's Retro9000 grant program:
 - [x] Frontend — Dashboard, Vaults, Analytics
 - [x] GitHub repository
 - [ ] Contract verification on Snowtrace
-- [ ] Frontend hosted on Vercel
+- [ ] Frontend hosted on Netlify
 - [ ] Mainnet deployment
 - [ ] Keeper automation (auto-execute DCA)
 - [ ] Multi-token support (USDT, DAI → AVAX)
